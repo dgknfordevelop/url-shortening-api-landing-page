@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    /* Primary */
+    --design-cyan: hsl(180, 66%, 49%);
+    --dark-violet: hsl(257, 27%, 26%);
+
+    /* Secondary */
+    --design-red: hsl(0, 87%, 67%);
+
+    /* Neutral */
+    --design-gray: hsl(0, 0%, 75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260, 8%, 14%);
+}
+
+@layer base{
+    html{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+        font-size: 18px;
+    }
+}
+
+@layer components{
+    .signup-button{
+        @apply h-[45px] bg-design-cyan rounded-full;
+    }
+}
+
+@layer utilities{
+   .border {
+        @apply border-[1px] border-solid border-red-700;
+    }
+}
