@@ -31,10 +31,18 @@
     .signup-button{
         @apply h-[45px] bg-design-cyan rounded-full;
     }
+
+    .get-started{
+        @apply w-[200px] h-[55px] rounded-full bg-design-cyan text-white font-bold
+    }
 }
 
 @layer utilities{
    .border {
         @apply border-[1px] border-solid border-red-700;
     }
-}
+    .working-illustration-svg{
+        transform: scale(0.7);
+        transform-origin: left center; 
+    }   
+} 
