@@ -43,6 +43,12 @@
     }
     .working-illustration-svg{
         transform: scale(0.7);
-        transform-origin: left center; 
-    }   
+        transform-origin: left center;
+    }
+    @media all (min-width: 380px){
+       .working-illustration-svg{
+           margin-left: 10%;
+       }
+    }
+
 } 

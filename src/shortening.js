@@ -7,15 +7,13 @@ function toggleSideNav() {
     mobileNav.classList.toggle("hidden")
 }
 
-function windowSize(){
+function windowSize() {
     let windowInnerWidth = window.innerWidth;
-    if(windowInnerWidth > 768){
+    if (windowInnerWidth > 768) {
         mobileNav.classList.add("hidden")
     }
-    if(windowInnerWidth < 768){
+    if (windowInnerWidth < 768) {
         toggleButton.classList.remove("hidden")
     }
 }
 window.addEventListener("resize", windowSize)
-
-

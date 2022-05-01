@@ -39,6 +39,7 @@ function watch() {
 }
 
 function defaultTask() {
+    browserSync.reload
     minifyHTML();
     minifyJS();
     minifyIMG();
