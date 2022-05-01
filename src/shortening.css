@@ -50,5 +50,16 @@
            margin-left: 10%;
        }
     }
+    @media all (min-width: 768px){
+        .working-illustration-svg{
+            transform-origin: center;
+        }
+     }
+     @media all (min-width: 1024px){
+        .working-illustration-svg{
+            margin-left: 0;
+            transform-origin: left;
+        }
+     }
 
 } 

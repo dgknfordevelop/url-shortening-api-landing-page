@@ -1,5 +1,5 @@
 let toggleButton = document.querySelector(".Hamburger")
-let mobileNav = document.querySelector(".Mobile-nav-section")
+let mobileNav = document.querySelector(".Mobile-nav-section-box")
 
 toggleButton.addEventListener('click', toggleSideNav)
 
