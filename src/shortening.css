@@ -35,6 +35,39 @@
     .get-started{
         @apply w-[200px] h-[55px] rounded-full bg-design-cyan text-white font-bold
     }
+
+    #Link-shortener-form{
+        background-image: url("./img/bg-shorten-mobile.svg")
+    }
+
+    @media all (min-width:1024px){
+        #Link-shortener-form{
+            background-image: url("./img/bg-shorten-desktop.svg")
+        }
+    }
+
+    .Statistics-section-info-item{
+        @apply bg-white pt-20 flex flex-col text-center mb-[86px] h-[280px] w-[87%] relative
+    }
+
+    .info-svg-box{
+        @apply relative flex justify-center
+    }
+    .info-svg{
+        @apply  bg-no-repeat bg-center rounded-full w-[85px] h-[85px] bg-dark-violet absolute -mt-[125px]
+    }
+    .info-h-tag{
+        @apply text-[21px] md:text-[23px] font-bold text-very-dark-blue mb-4
+    }
+    .Statistics-section-p-tag{
+        @apply text-grayish-violet text-center px-[22px] leading-7 text-base md:px-[150px]
+    }
+    .Statistics-cyan-vertical-line-box{
+        @apply absolute -bottom-[51px] w-full flex justify-center
+    }
+    .Statistics-cyan-vertical-line{
+        @apply w-[9px] h-[50px] bg-design-cyan 
+    }
 }
 
 @layer utilities{
@@ -59,6 +92,12 @@
         .working-illustration-svg{
             margin-left: 0;
             transform-origin: left;
+        }
+     }
+     @media all (min-width: 1280px){
+        .working-illustration-svg{
+            transform: scale(0.9);
+            transform-origin: right;
         }
      }
 
