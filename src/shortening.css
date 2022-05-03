@@ -53,26 +53,44 @@
     .info-svg-box{
         @apply relative flex justify-center xl:justify-start
     }
+
     .info-svg{
         @apply  bg-no-repeat bg-center rounded-full w-[85px] h-[85px] bg-dark-violet absolute -mt-[125px]
     }
+
     .info-h-tag{
         @apply text-[21px] md:text-[23px] xl:text-[21px] font-bold text-very-dark-blue mb-4
     }
+
     .Statistics-section-p-tag{
         @apply text-grayish-violet text-center px-[22px] leading-7 text-base lg:text-lg md:px-[150px] xl:px-[0]
     }
+
     .Statistics-vertical-line-box{
-        @apply absolute -bottom-[51px] border w-full h-fit flex justify-center xl:hidden
+        @apply absolute -bottom-[51px] w-full h-fit flex justify-center xl:hidden
     }
+
     .Statistics-vertical-line{
         @apply w-[9px] h-[50px] bg-design-cyan
     }
+
     .Statistics-horizontal-line-box{
         @apply hidden w-fit h-fit xl:block xl:-ml-8 xl:mt-7
     }
+    
     .Statistics-horizontal-line{
         @apply xl:w-[30px] xl:h-[9px] bg-design-cyan
+    }
+
+    .Bottom-banner-section{
+        background-image: url("./img/bg-boost-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media all (min-width:768px){
+        .Bottom-banner-section{
+            background-image: url("./img/bg-boost-desktop.svg")
+        }
     }
 }
 
