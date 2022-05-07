@@ -33,16 +33,17 @@
     }
 
     .get-started{
-        @apply w-[200px] h-[55px] rounded-full bg-design-cyan text-white font-bold
+        @apply w-[200px] h-[55px] rounded-full bg-design-cyan text-white font-bold;
     }
 
     #Link-shortener-form{
-        background-image: url("./img/bg-shorten-mobile.svg")
+        background-image: url("./img/bg-shorten-mobile.svg");
     }
 
     @media all (min-width:1024px){
         #Link-shortener-form{
-            background-image: url("./img/bg-shorten-desktop.svg")
+            background-image: url("./img/bg-shorten-desktop.svg");
+            background-size:cover;
         }
     }
 
@@ -92,11 +93,43 @@
             background-image: url("./img/bg-boost-desktop.svg")
         }
     }
-}
+
+    .Ready-link-box{
+        @apply w-full lg:flex lg:justify-between lg:items-center bg-white rounded-md pt-3 pb-3 lg:pt-5 lg:pb-5 mt-6;
+    }
+
+    .User-link{
+        @apply inline-block lg:w-[500px]  lg:mr-8 max-h-20 pl-3 lg:pl-6 text-very-dark-blue text-[14px] lg:text-base lg:text-[17px] lg:font-bold overflow-x-auto
+    }
+    
+    .Ready-link-box-horizontal-line{
+        @apply border-gray-300 lg:hidden;
+    }
+    
+    .Ready-link-item{
+        @apply lg:min-w-[350px] text-[14px] lg:text-[18px] pl-3 lg:pl-0 pr-5 lg:flex;
+    }
+    
+    .Ready-link-text{
+        @apply text-design-cyan lg:flex lg:items-center lg:font-bold inline-block mt-4 lg:mt-0 mb-1 lg:mb-0 lg:mr-7;
+    }
+    
+    .Ready-link-copy-button{
+        @apply w-full lg:w-[125px] lg:font-bold bg-design-cyan text-white rounded-md h-[40px] hover:opacity-50;
+    }
+    
+    footer li a:hover{
+        @apply text-design-cyan
+    }
+
+    footer li svg:hover path{
+            fill: var(--design-cyan)
+    }
+}   
 
 @layer utilities{
    .border {
-        @apply border-[1px] border-solid border-red-700;
+        @apply border-[3px] border-solid border-design-red;
     }
     .working-illustration-svg{
         transform: scale(0.7);

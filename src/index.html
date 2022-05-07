@@ -38,14 +38,14 @@
 
       <div class="Desktop-nav-Section hidden w-full h-fit md:flex justify-between font-bold">
         <nav class="desktop-nav flex items-center ml-12 text-grayish-violet">
-            <a href="#" class="mr-9">Features</a>
-            <a href="#" class="mr-9">Pricing</a>
-            <a href="#" class="mr-9">Resources</a>
+            <a href="#" class="mr-9 hover:text-very-dark-violet">Features</a>
+            <a href="#" class="mr-9 hover:text-very-dark-violet">Pricing</a>
+            <a href="#" class="mr-9 hover:text-very-dark-violet">Resources</a>
         </nav>
 
-        <div class="desktop-entry ">
+        <div class="desktop-entry">
           <button type="button" class="font-bold text-grayish-violet md:mr-7">Login</button>
-          <button type="button" class="signup-button text-white w-[130px] h-[45px] font-bold">Sign Up</button>
+          <button type="button" class="signup-button text-white w-[130px] h-[45px] font-bold hover:opacity-50">Sign Up</button>
         </div>
       </div>
 
@@ -61,7 +61,7 @@
         <h1 class="font-bold text-4xl lg:text-5xl xl:text-6xl mb-[10px]  text-very-dark-violet">More than just shorter links</h1>
         <p class="mb-[35px] px-7 lg:px-0 lg:text-xl text-grayish-violet">Build your brand’s recognition and get detailed insights
           on how your links are performing.</p>
-        <button class="get-started">
+        <button class="get-started hover:opacity-50">
           Get Started
         </button>
       </div>
@@ -73,18 +73,28 @@
       
     </section>
 
-    <main class="flex flex-col items-center">
-      <div class="Link-shortener-form-box w-[87%] h-[160px] z-1 lg:w-full lg:px-6 xl:px-36">
-        <form id="Link-shortener-form" class="flex flex-col lg:flex-row lg:justify-center justify-center items-center w-full h-full lg:px-6 bg-no-repeat bg-right-top rounded-lg bg-dark-violet">
-          <input type="text" class="w-[85%] h-[50px] lg:w-[70%] text-base lg:text-lg lg:mr-5 indent-4 mb-4 lg:mb-0 rounded-md" placeholder="Shorten a link here...">
-          <button class="w-[85%] h-[50px] lg:w-[18%] bg-design-cyan text-white font-bold rounded-md">Shorten It!</button>
+    <main class="flex flex-col items-center bg-gray-100">
+      <div class="bg-white-box absolute bg-white w-full h-[81px]"></div>
+
+      <div class="Link-shortener-form-box w-[87%] min-h-[160px] max-h-[500px] overflow-x-scroll z-1 lg:w-full lg:px-6 xl:px-36">
+
+        <form id="Link-shortener-form" class="flex flex-col pt-6 pb-6 lg:pt-12 lg:pb-12 lg:flex-row justify-center items-center w-full h-full lg:px-6 bg-no-repeat bg-right-top rounded-lg bg-dark-violet">
+          <div class="Input-box w-[85%] lg:w-[70%] lg:relative h-fit lg:mr-5 mb-4 lg:mb-0">
+            <input type="text" class="User-input peer w-full focus:outline-none focus:border focus:placeholder-red-200  h-[50px] xl:h-[60px]  text-base lg:text-lg  indent-4  rounded-md" placeholder="Shorten a link here...">
+            <span class="hidden lg:absolute lg:top-14 peer-focus:block w-fit text-design-red italic text-[13px]">Please add a link</span>
+          </div>
+          <button class="w-[85%] h-[50px] xl:h-[60px] lg:w-[18%] bg-design-cyan text-white font-bold rounded-md hover:bg-cyan-200">Shorten It!</button>
         </form>
+
       </div>
-      
-      <section class="Statistics-section w-full h-fit xl:h-[870px] -mt-[80px] bg-gray-100 flex flex-col pt-44">
+     
+
+      <section class="Statistics-section w-full h-fit xl:h-[690px] mt-[105px] flex flex-col items-center">
+        
+          
 
           <div class="Statistics-section-text-box flex flex-col items-center mb-[90px] h-fit">
-            <h3 class="text-2xl md:text-3xl font-bold text-very-dark-blue mb-5">Advanced Statistics</h3>
+            <h3 class="text-[26px] md:text-3xl font-bold text-very-dark-blue mb-5">Advanced Statistics</h3>
             <p class="Statistics-section-p-tag md:px-[250px] xl:px-[0] xl:w-[515px] ">Track how your links are performing across the web with our
               advanced statistics dashboard.
             </p>
@@ -140,7 +150,7 @@
     <section class="Bottom-banner-section h-[300px] md:h-[220px] pt-3 md:pt-0 w-full flex justify-center items-center  bg-dark-violet">
       <div class="w-fit min-h-fit text-center">
         <h3 class="text-[25px] md:text-3xl text-white font-bold">Boost your links today</h3>
-        <button class="get-started mt-4 md:mt-5">Get Started</button>
+        <button class="get-started mt-4 md:mt-5 hover:bg-cyan-200">Get Started</button>
       </div>
     </section>
 
@@ -202,9 +212,9 @@
       </div>
     </footer>
 
-    <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.Coded by <a href="#">Your Name Here</a>.</div>
-    <script type="text/javascript" src="./shortening.js">
-    </script>
+    <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.Coded by <a href="https://github.com/dgknfordevelop">Doğukan Çalışkan</a>.</div>
+    <script type="text/javascript" src="./shortening-nav.js"></script>
+    <script type="text/javascript" src="./shortening-link.js"></script>
   </body>
 
 </html>
