@@ -25,6 +25,20 @@
     body{
         font-size: 18px;
     }
+
+    @media screen(2xl){
+        html{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media screen(2xl){
+        body{
+            width: 1536px;
+        }
+    }
 }
 
 @layer components{
