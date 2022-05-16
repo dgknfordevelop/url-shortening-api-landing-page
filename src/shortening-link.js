@@ -1,4 +1,4 @@
-let apiUrl = "https://api.shrtco.de/v2/";
+let apiUrl = "https://api.shrtco.de/v2";
 let linkForm = document.querySelector("#Link-shortener-form")
 let userInput = document.querySelector(".User-input")
 let linkBox = document.querySelector(".Link-shortener-form-box")
@@ -99,11 +99,11 @@ function sendLink(e) {
         userInput.value = "Please add your URL here";
     }
 
-    function addLinkItem(item) {
+    function addLinkItem(response) {
         const ReadyLinkText = document.createElement("span");
         ReadyLinkText.className = "Ready-link-text";
-        ReadyLinkText.innerText = `${item.result.full_short_link}`
-
+        ReadyLinkText.innerText = `${response.result.short_link}`;
+        
         const ReadyLinkCopyButton = document.createElement("button");
         ReadyLinkCopyButton.className = "Ready-link-copy-button";
         ReadyLinkCopyButton.innerText = "Copy";
@@ -143,7 +143,7 @@ function sendLink(e) {
             localStorage.setItem("shortLink", JSON.stringify(localShortLinkArray));
         }
 
-        setShortLinkLocalStorage(item.result.full_short_link);
+        setShortLinkLocalStorage(response.result.short_link);
         // working with localStorage ends here
 
         userInput.value = "";
